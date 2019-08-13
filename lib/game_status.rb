@@ -38,7 +38,8 @@ def winner(board)
   WIN_COMBINATIONS.each do |combo|
    return 'X' if combo.all?{|x| board[x] == 'X'} 
  end
-   'Y'
+ return nil if draw?(board)
+   'O'
 end
  
  
