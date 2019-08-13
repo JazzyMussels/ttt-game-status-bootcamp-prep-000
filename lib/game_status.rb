@@ -42,7 +42,7 @@ def winner(board)
       return 'O'
     end
   end
-  nil
+  return nil if !won?(board)
 end
  
       
