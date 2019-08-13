@@ -36,7 +36,7 @@ end
 
 def winner?(board)
   winner = []
-  winner = won?(board)
+  winner << won?(board)
   winner.select{|char| char[0]}
 end
  
