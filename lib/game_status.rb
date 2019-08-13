@@ -20,6 +20,12 @@ def won?(board)
    return combo if combo.all?{|x| board[x] == 'X'} || combo.all?{|x| board[x] == 'O'}
  end
  false
- end
+end
+
+def full?(board)
+  board.all?{|char| char == 'X' || char == 'O'}
+end
+ 
+ 
       
       
