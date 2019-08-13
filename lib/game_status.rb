@@ -33,6 +33,11 @@ end
 def over?(board)
   won?(board) || full?(board) || draw?(board)
 end
+
+def winner?(board)
+  winner = won?(board)
+  winner.select{|char| char[0]}
+end
  
  
       
