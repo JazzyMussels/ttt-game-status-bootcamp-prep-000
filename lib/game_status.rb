@@ -40,9 +40,10 @@ def winner(board)
       return 'X'
     else if combo.all?{|x| board[x] == 'O'} 
       return 'O'
+    else 
+      return nil
     end
- end
- nil
+  end
 end
  
  
